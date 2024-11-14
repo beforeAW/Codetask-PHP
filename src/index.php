@@ -30,8 +30,11 @@
     </h1>
     <p class="greeting"><!-- PHP: Display the personalized greeting here -->
         <?php
-            $greeting = "Greetings " . $name . "!";
-            echo $greeting;
+            function greeting($name){
+                $greeting = "Greetings " . $name . "!";
+                echo $greeting;
+            }
+            greeting($name);
         ?>
     </p>
     <p>Age: <!-- PHP: Display the user age here -->
