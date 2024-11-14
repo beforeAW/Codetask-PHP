@@ -34,10 +34,10 @@
             echo $greeting;
         ?>
     </p>
-    <p>Age: 
+    <p>Age: <!-- PHP: Display the user age here -->
         <?php
             echo $age;
-        ?><!-- PHP: Display the user age here -->
+        ?>
     </p>
     <p>City: <!-- PHP: Display the user city here -->
         <?php
