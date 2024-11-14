@@ -23,27 +23,28 @@
             "Anime",
         ];
     ?>
-    <h1>
+    <h1><!-- PHP: Place the user name here -->
         <?php 
             echo $name;
-        ?><!-- PHP: Place the user name here -->
+        ?>
     </h1>
-    <p class="greeting">
+    <p class="greeting"><!-- PHP: Display the personalized greeting here -->
         <?php
             $greeting = "Greetings " . $name . "!";
             echo $greeting;
-        ?><!-- PHP: Display the personalized greeting here --></p>
+        ?>
+    </p>
     <p>Age: 
         <?php
             echo $age;
         ?><!-- PHP: Display the user age here -->
     </p>
-    <p>City: 
+    <p>City: <!-- PHP: Display the user city here -->
         <?php
             echo $city;
-        ?><!-- PHP: Display the user city here -->
+        ?>
     </p>
-    <p class="status">
+    <p class="status"><!-- PHP: Display status based on age (Adult or Minor) -->
         <?php
             if ($age >= 18){
                 $adult = " " . $name . " is an adult.";
@@ -53,16 +54,17 @@
                 $minor = " " . $name . " is a minor.";
                 echo $minor;
             }
-        ?><!-- PHP: Display status based on age (Adult or Minor) --></p>
+        ?>
+    </p>
 
     <h2>Hobbies</h2>
-    <ul>
+    <ul><!-- PHP: Loop through hobbies and display each hobby as a list item -->
         <?php
             foreach ($hobbies as $hobby){
                 $hobbyList = "<li> $hobby </li>";
                 echo $hobbyList;
             }
-        ?><!-- PHP: Loop through hobbies and display each hobby as a list item -->
+        ?>
     </ul>
 </div>
 
